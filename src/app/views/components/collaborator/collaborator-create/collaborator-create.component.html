@@ -1,0 +1,22 @@
+<form class="form">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input [(ngModel)] ="collaborator.name" [formControl]="name" required name ="name" matInput placeholder="Dígite seu nome ">
+      <mat-error *ngIf="name.invalid">{{ errorValidForm() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input [(ngModel)] = "collaborator.email" [formControl]="email" required name = "email" matInput placeholder="Dígite seu Email ">
+     z
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Cargo</mat-label>
+      <input [(ngModel)] = "collaborator.office" [formControl]="office" required name = "office" matInput placeholder="Dígite seu Cargo ">
+      <mat-error *ngIf="office.invalid">{{ errorValidForm() }}</mat-error>
+    </mat-form-field>
+
+<button (click)= "create()"mat-stroked-button color="accent">ADICIONAR</button>
+<button (click)= "cancel()"mat-stroked-button color="warn">CANCELAR</button>
+</form>

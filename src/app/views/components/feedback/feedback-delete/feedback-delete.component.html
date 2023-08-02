@@ -1,0 +1,15 @@
+<form class="form">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input [(ngModel)] ="feedback.moment" disabled required name ="moment" matInput placeholder="Dígite seu nome ">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Cargo</mat-label>
+      <input [(ngModel)] = "feedback.feedbackText" disabled name = "feedbackText" matInput placeholder="Dígite seu Cargo ">
+    </mat-form-field>
+
+<button (click)= "delete()"mat-stroked-button color="accent">DELETE</button>
+<button (click)= "cancel()"mat-stroked-button color="warn">CANCELAR</button>
+</form>
+

@@ -1,0 +1,19 @@
+<form class="form">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input [(ngModel)] ="collaborator.name" disabled required name ="name" matInput placeholder="Dígite seu nome ">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input [(ngModel)] = "collaborator.email" disabled name = "email" matInput placeholder="Dígite seu Email ">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Cargo</mat-label>
+      <input [(ngModel)] = "collaborator.office" disabled name = "office" matInput placeholder="Dígite seu Cargo ">
+    </mat-form-field>
+
+<button (click)= "delete()"mat-stroked-button color="accent">DELETE</button>
+<button (click)= "cancel()"mat-stroked-button color="warn">CANCELAR</button>
+</form>

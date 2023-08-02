@@ -1,0 +1,15 @@
+.card {
+  background-color: rgb(60, 60, 60);
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+.matcard{
+  color: rgb(0, 0, 0);
+}
+

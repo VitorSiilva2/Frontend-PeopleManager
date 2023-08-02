@@ -1,0 +1,12 @@
+<form class="form">
+  <mat-form-field class="full-width">
+    <mat-label>Feedback</mat-label>
+    <input [(ngModel)] ="feedback.feedbackText" required name ="feedbackText" matInput placeholder="Dígite seu feedback ">
+  </mat-form-field>
+
+  <button (click)= "create()"mat-stroked-button color="accent">CRIAR</button>
+  <button (click)= "cancel()"mat-stroked-button color="warn">CANCELAR</button>
+
+</form>
+
+   
